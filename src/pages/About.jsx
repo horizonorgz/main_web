@@ -6,14 +6,14 @@ const founders = [
   {
     name: "Babusha Kolhe",
     title: "Founder",
-    image: "/src/assets/founder1.jpg", // Replace with your actual image path
+    image: "/assets/founder1.jpg", // Replace with your actual image path
     intro:
   "Babusha Kolhe is a tech enthusiast and founder, passionate about turning creative ideas into impactful web experiences.",
   },
   {
     name: "Yashraj Dudhe",
     title: "Founder",
-    image: "/src/assets/founder2.jpg", // Replace with your actual image path
+    image: "/assets/founder2.jpg", // Replace with your actual image path
     intro:
       "Yashraj Dudhe is a founder and machine learning enthusiast, dedicated to creating intelligent solutions that drive innovation and real-world impact.",
   },
