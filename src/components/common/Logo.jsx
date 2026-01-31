@@ -1,5 +1,5 @@
 import React from "react";
-import mwLogo from "../../assets/logoyashraj1white.svg";
+import mwLogo from "/logoyashraj1white.svg";
 
 const Logo = () => {
   return (

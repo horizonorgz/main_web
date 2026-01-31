@@ -27,7 +27,7 @@ const handleScrollTo = (sectionId) => {
             <h2 id="horizon" className="text-2xl text-white flex items-center gap-2">
               <span className="bg-black p-2 rounded-lg">
                 <img
-                  src="src\assets\logoyashraj1white.svg"
+                  src="/logoyashraj1white.svg"
                   alt="Logo"
                   className="w-8 h-10 object-cover"
                 />
