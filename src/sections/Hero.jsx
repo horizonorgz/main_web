@@ -7,6 +7,11 @@ const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
 
+  const handleGetStarted = () => {
+  window.open("https://full-jet.vercel.app", "_blank", "noopener,noreferrer");
+};
+
+
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 640); // Tailwind sm breakpoint
     checkMobile();
@@ -40,7 +45,7 @@ const Hero = () => {
     </p>
 
     {/* CTA */}
-    <button className="mt-8 px-8 py-3 border border-white text-white  rounded-full text-lg font-medium transition-all hover:scale-110 duration-300">
+    <button onClick={handleGetStarted} className="mt-8 px-8 py-3 border border-white text-white  rounded-full text-lg font-medium transition-all hover:scale-110 duration-300">
       Get Started
     </button>
   </div>

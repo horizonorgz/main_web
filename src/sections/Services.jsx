@@ -128,6 +128,7 @@ const services = [
     title: "Custom AI Solution",
     description:
       "Develop bespoke AI solutions from the ground up to solve your unique business challenges.",
+      link: "https://full-jet.vercel.app",
   },
 ];
 
@@ -153,12 +154,19 @@ const Services = () => {
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-6 md:gap-12 md:px-12">
         {services.map((service, index) => (
           <div
-            key={index}
-            className="group relative bg-neutral-900/80 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/10 
-                       hover:border-purple-400/40 hover:shadow-purple-500/20 
-                       transform transition-all duration-500 hover:-translate-y-3 hover:rotate-1"
-            style={{ transformStyle: "preserve-3d" }}
-          >
+  key={index}
+  onClick={() => {
+    if (service.link) {
+      window.open(service.link, "_blank", "noopener,noreferrer");
+    }
+  }}
+  className={`group relative bg-neutral-900/80 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/10 
+    hover:border-purple-400/40 hover:shadow-purple-500/20 
+    transform transition-all duration-500 hover:-translate-y-3 hover:rotate-1
+    ${service.link ? "cursor-pointer" : ""}`}
+  style={{ transformStyle: "preserve-3d" }}
+>
+
             {/* Glow effect */}
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
 
